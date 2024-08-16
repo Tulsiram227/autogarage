@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMob-Mechanic Service Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AutoMob-Mechanic</h1>
+        <h2>Book a Service</h2>
+        <form id="service-form">
+            <label for="service-type">Select Service:</label>
+            <select id="service-type" required>
+                <option value="Oil Change">Oil Change</option>
+                <option value="Brake Repair">Brake Repair</option>
+                <option value="Tire Replacement">Tire Replacement</option>
+                <option value="Engine Repair">Engine Repair</option>
+            </select>
+            <label for="service-date">Select Date:</label>
+            <input type="date" id="service-date" required>
+            <button type="submit">Book Service</button>
+        </form>
+        <div id="confirmation-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
